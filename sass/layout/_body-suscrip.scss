@@ -1,0 +1,17 @@
+#number{
+    @include botones;
+}
+#nombre{
+    @include botones;
+}
+#email{
+    @include botones;
+}
+#text{
+    @include botones;
+}
+#boton-enviar{
+    font-family: "Inria Serif", serif;
+    color: white;
+    display:block;
+}

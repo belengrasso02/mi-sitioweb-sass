@@ -1,0 +1,25 @@
+.contacto-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    .contacto-mail{
+        display: flex;
+        padding: 2.5rem;
+        gap: 1.875rem;
+    }
+    .contacto-wsp{
+        display: flex;
+        padding-top: 6.25rem ;
+        padding-left: 2.5rem;
+        gap: 1.875rem;
+    }
+    .ubicacion iframe{
+        width: 37.5rem;
+        height: 25rem;
+        p{
+            padding-top: 1.25rem;
+        }
+    }
+    
+}

@@ -39,8 +39,8 @@
         grid-template-columns: repeat(3,15.625rem);
         grid-template-rows: repeat(5,12.5rem);
         .grid-quienes-somos .texto-1{
-            grid-column: 1/2;
-            grid-row: 1;
+            grid-column: 2/3;
+            grid-row: 3/4;
             font-size: map-get($tamanio-fuente , xs );
             padding: 1.25rem;
             align-items: start;
@@ -63,6 +63,69 @@
         .img-2{
             width: 9.375rem;
             grid-area: 4/1 ;
+        }
+    }
+
+    .grid-recetas{
+        .receta-1{
+            .img-pizza{
+                width: 100%;
+                position: relative;
+                left: 3.125rem;
+                img{
+                    width: 25rem;
+                }
+            }
+            .bloque-negro-1{
+                padding: 2.5rem;
+                p{
+                    font-size: .8125rem;
+                }
+            }
+        }
+        .receta-2{
+            width: 90%;
+            .img-tostadas{
+                width: 100%;
+                img{
+                    width: 20rem;
+                    position: relative;
+                    left: 1.5625rem;
+                }
+            }
+        }
+        .receta-3{
+            width: 90%;
+            height: 44.5rem;
+            .img-fideos{
+                width: 100%;
+                position: relative;
+                left: 1.6875rem;
+                img{
+                    width: 18.75rem;
+                }
+            }
+        }
+        .receta-4{
+            height: 28.625rem;
+            .img-churrasco{
+                width: 100%;
+                position: relative;
+                left: 9.375rem;
+                img{
+                    width: 25rem;
+                }
+            }
+            .bloque-negro-2{
+                padding: 5rem;
+                h2{
+                    font-size: 1.0625rem;
+                    padding: 3.125rem;
+                }
+                p{
+                    font-size: .9375rem;
+                }
+            }
         }
     }
 }

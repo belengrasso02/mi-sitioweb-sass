@@ -48,27 +48,32 @@
         .main-q{
             .grid-quienes-somos{
                 grid-template-columns: 1fr;
-                grid-template-rows: repeat(2, 1fr);
+                grid-template-rows: repeat(3,1fr);
                 .texto-1{
                     font-size: 1.25rem;
-                    grid-row: 1;
+                    grid-row: 2/3;
+                    align-self:  center;
                 }
                 .texto-2{
                     padding-right: 5rem;
                     font-size: .9375rem;
+                    grid-row: 3/4;
+                    grid-column: 1/2;
+                    align-self: flex-start;
                 }
                 .texto-3{
                     font-size: .9375rem;
-                    align-self: start;
+                    align-self: end;
+                    grid-row: 3/4;
                 }
                 .img-1 {
-                    width: 18.75rem;
-                    grid-column: 1/2;
-                    grid-row: 1;
+                    width: 12.5rem;
+                    grid-column: 1;
+                    grid-row: 1; 
                     position: relative;
-                    left: 2.5rem;
+                    right: -7.1875rem;
                     img{
-                        width: 15.625rem;
+                        width: 12.5rem;
                     }
                 }
                 .img-2{

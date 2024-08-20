@@ -1,0 +1,104 @@
+
+.grid-recetas{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    .receta-1{
+        background-color: map-get($color-fondo , color6 );
+        border-radius: 10%;
+        grid-column: 1/3;
+        width: 90%;
+        gap: 1.5625rem;
+        @include grid;
+        .img-pizza{
+            margin: 1.25rem;
+            grid-area: 1/1;
+        }
+    }
+    .bloque-negro-1{
+        border-radius: 15%;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        width: 400px;
+        gap: 1.25rem;
+        grid-area: 1/2;
+        margin: 1.25rem;
+        padding: 1.25rem;
+        h2{
+            padding-bottom: 3.125rem
+        }
+    }
+    .receta-2{
+        background-color:map-get($color-fondo , color7);
+        border-radius: 10%;
+        grid-area: 2/1;
+        grid-row: 2/3;
+        width: 88%;
+        @include grid;
+
+        .img-tostadas{
+            margin-top: 2.5rem;
+            margin-left: .3125rem;
+        }
+    }
+    .bloque-blanco-1{
+        border-radius: 10%;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        width: 500px;
+        height: 18.75rem;
+        grid-area: 3/1;
+        margin: 1.25rem;
+        padding: 1.25rem;
+        h2{
+            padding-bottom: 3.125rem;
+        }
+    }
+    .receta-3{
+        background-color:map-get($color-fondo, color7);
+        border-radius: 10%;
+        grid-area: 2/2;
+        grid-row: 2/3;
+        width: 88%;
+        height: 54.375rem;
+        @include grid;
+        .img-fideos{
+            margin-top: 2.5rem;
+            padding-left: .9375rem;
+        }
+    }
+    .bloque-blanco-2{
+        @extend .bloque-blanco-1;
+        h2{
+            padding-bottom: 3.125rem;
+        }
+    }
+    .receta-4{
+        @include grid;
+        width: 90%;
+        height: 34.375rem;
+        background-color:map-get($color-fondo , color6 );
+        border-radius: 10%;
+        grid-column: 1/3;
+
+        .img-churrasco{
+            margin-top: 1.25rem;
+        }
+    }
+    .bloque-negro-2{
+        @extend .bloque-negro-1;
+        width: 31.25rem;
+        height: 31.25rem;
+        h2{
+            padding-bottom: 3.125rem;
+        }
+    }
+}
+.parrafo-4{
+    text-align: center;
+    font-size: map-get($tamanio-fuente, m );
+    padding: 1.875rem;
+}
