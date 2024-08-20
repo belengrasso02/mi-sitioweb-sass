@@ -1,0 +1,121 @@
+@media (max-width:426px) {
+    .pagina-principal{
+        height: 25rem;
+        .titulo-del-navegador{
+            font-size: .9375rem;
+            padding-top: .3125rem;
+            .nav-bar ul {
+                gap: .625rem;
+                a{
+                    font-size: .0094rem;
+                }
+            }
+        }
+        .titulo-grande{
+            font-size: 4.375rem;
+            margin: auto;
+            padding: 1.5625rem;
+        }
+    }
+    .parrafo-del-body{
+        font-size: 1.0625rem;
+    }
+    .recetas-grid{
+    grid-template-columns: repeat (3,14.0625rem);
+    grid-template-rows: repeat (3,18.75rem);
+    .receta-circulo-1{
+        grid-area: 1/1;
+    }
+    .receta-circulo-2{
+        grid-area: 1/2;
+    }
+    .receta-circulo-3{
+        grid-area: 2/1;
+    }
+    .receta-circulo-4{
+        grid-area: 2/2;
+    }
+    .receta-circulo-5{
+        grid-area: 3/1;
+    }
+    .receta-circulo-6{
+        grid-area: 3/2;
+    }
+    img{
+        width: 12.5rem;
+        padding-right: .625rem;
+    }
+    .titulos-de-los-circulos{
+        font-size: .8125rem;
+        padding: 1.25rem;
+    }
+    }
+
+    .fondo-pagina-2{
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        .pagina-principal-2 {
+            .titulo-del-navegador{
+                font-size: 1.25rem;
+                padding-top: .3125rem;
+            }
+            .nav-bar ul{
+                gap: .625rem;
+                a{
+                    font-size: .75rem;
+                }
+            }
+        }
+        .hola{
+            font-size: 2.5rem;
+            padding-top: 1.25rem;
+        }
+        .parrafo-quienes-somos{
+            width: 100%;
+            font-size: .9375rem;
+            margin: auto;
+            padding: .9375rem;
+        }
+        .grid-quienes-somos{
+            .texto-1{
+                align-self: center;
+                font-size: 1.25rem;
+                grid-column: 1;
+                grid-row: 1/2;
+            }
+            .texto-2{
+                align-self: start;
+                font-size: 1.0625rem;
+                gap: .3125rem;
+                width: 50%;
+                grid-row: 2/3;
+            }
+            .texto-3{
+                width: 18.75rem;
+                font-size: 1.25rem;
+                grid-column: 1/2;
+                grid-row: 3/4;
+                align-self: end;
+                justify-self: center;
+                padding-left: .625rem;
+            }
+            .img-1{
+                width: 15.625rem;
+                grid-row: 2/3;
+                position: relative;
+                left: -14.0625rem;
+                img{
+                    width: 15.625rem;
+                }
+            }
+            .img-2{
+                width: 25rem;
+                grid-area: 4/1;
+                img{
+                    width: 25rem;
+                }
+            }
+        }
+    }
+    }

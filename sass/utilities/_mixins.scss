@@ -1,0 +1,31 @@
+@mixin flex{
+    display: flex;
+    justify-content: flex-end;
+    justify-items: end;
+    gap: 1.875rem;
+}
+
+// @mixin grid ($textalign, $column, $row, $alignself) {
+//     display: grid;
+//     text-align: $textalign;
+//     grid-column: $column;
+//     grid-row: $row;
+//     align-self: $alignself;
+// }
+
+@mixin grid {
+    display:grid;
+    justify-content: center;
+    gap: 1.5625rem;
+    margin: auto;
+}
+
+@mixin botones{
+    font-size: 1.25rem;
+    font-family: "Inria Serif", serif;
+    color: white;
+    padding-right: 18.75rem;
+    background-color:rgba(240, 204, 216, 0.502);
+    margin: 1.25rem;
+    display:block;
+}

@@ -1,0 +1,83 @@
+@media (max-width: 321px ){
+    .pagina-principal,
+    .pagina-principal-2{ 
+        .nav-bar ul {
+            gap: .3125rem;
+            a{
+                font-size: .5rem;
+            }
+        }
+    }
+    .parrafo-del-body{
+        font-size: .9375rem;
+    }
+    .recetas-grid{
+        grid-template-columns: (1,25rem);
+        grid-template-rows: repeat (6,18.75rem);
+        article img{
+            width: 20rem;
+            padding-right: 2.5rem;
+        }
+        .receta-circulo-1{
+            grid-area: 1/1;
+        }
+        .receta-circulo-2{
+            grid-area: 2/1;
+        }
+        .receta-circulo-3{
+            grid-area: 3/1;
+        }
+        .receta-circulo-4{
+            grid-area: 4/1;
+        }
+        .receta-circulo-5{
+            grid-area: 5/1;
+        }
+        .receta-circulo-6{
+            grid-area: 6/1;
+        }
+        }
+    .grid-recetas{
+        grid-template-columns: 1,18.75rem;
+        grid-template-rows: repeat(4,12.5rem);
+    }
+    .fondo-pagina-2{
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        .main-q{
+            .grid-quienes-somos{
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(2, 1fr);
+                .texto-1{
+                    font-size: 1.25rem;
+                    grid-row: 1;
+                }
+                .texto-2{
+                    padding-right: 5rem;
+                    font-size: .9375rem;
+                }
+                .texto-3{
+                    font-size: .9375rem;
+                    align-self: start;
+                }
+                .img-1 {
+                    width: 18.75rem;
+                    grid-column: 1/2;
+                    grid-row: 1;
+                    position: relative;
+                    left: 2.5rem;
+                    img{
+                        width: 15.625rem;
+                    }
+                }
+                .img-2{
+                    width: 18.75rem;
+                    img{
+                        width: 16.875rem;
+                    }
+                }
+        }
+        }
+    }
+}

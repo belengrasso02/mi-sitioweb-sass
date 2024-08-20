@@ -1,0 +1,31 @@
+
+    .pagina-principal-2 {
+        background-color: map-get($color-fondo, color1 );
+    }
+    .titulo-del-navegador{
+        color: map-get($color-fondo , color3 );
+        font-size: map-get($tamanio-fuente , xl );
+        font-family: "Great Vibes", cursive;
+        }
+        .nav-bar ul{
+            list-style-type: none;
+            @include flex;
+            padding-right: .625rem;
+            li a{
+                color: white;
+                font-family: "Inria Serif", serif;
+                text-decoration: none;
+                &:hover{
+                    color: black;
+                }
+            }
+}
+
+.pagina-principal-3{
+    background-image: url(../assets/img/fondo-uva.png);
+    .titulo-pag-recetas{
+        font-size: map-get($tamanio-fuente , m);
+        text-align: center;
+        padding: 30px;
+    }
+}

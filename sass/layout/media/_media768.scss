@@ -1,0 +1,68 @@
+@media (max-width:768px){
+    .pagina-principal{
+        .titulo-del-navegador{
+            font-size: 1.5625rem;
+        }
+        .titulo-grande{
+            font-size: 8.75rem;
+        }
+    }
+    .parrafo-del-body{
+        font-size: 1.25rem;
+        margin: 1.25rem;
+    }
+    .recetas-grid{
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        padding-top: 2.5rem;
+        row-gap: 3.75rem;
+        .receta-circulo-1{
+            grid-area: 1/1;
+        }
+        .receta-circulo-2{
+            grid-area: 1/2;
+        }
+        .receta-circulo-3{
+            grid-area: 2/1;
+        }
+        .receta-circulo-4{
+            grid-area:2/2;
+        }
+    }
+    .parrafo-quienes-somos{
+        font-size: 1.25rem;
+    }
+    .grid-quienes-somos{
+        grid-template-columns: repeat(3,15.625rem);
+        grid-template-rows: repeat(5,12.5rem);
+        .grid-quienes-somos .texto-1{
+            grid-column: 1/2;
+            grid-row: 1;
+            font-size: map-get($tamanio-fuente , xs );
+            padding: 1.25rem;
+            align-items: start;
+        }
+        .texto-2{
+            font-size: 1.25rem;
+        }
+        .texto-3{
+            font-size: 1.5625rem;
+            grid-area: 5/3;
+        }
+        .img-1{
+            grid-area: 1/2;
+            position: relative;
+            right: .3125rem;
+            img{
+                width: 25rem;
+            }
+        }
+        .img-2{
+            width: 9.375rem;
+            grid-area: 4/1 ;
+        }
+    }
+}
