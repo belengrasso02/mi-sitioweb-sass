@@ -1,9 +1,13 @@
 @media (max-width:426px) {
     .nav-bar ul {
         gap: .625rem;
-        font-size: .8125rem;
+        font-size: 12px;
     }
     .pagina-principal{
+        .nav-bar ul{
+            gap: .625rem;
+            font-size: 12px;
+        }
         height: 25rem;
         .titulo-del-navegador{
             font-size: .9375rem;

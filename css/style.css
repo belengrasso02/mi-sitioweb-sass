@@ -635,9 +635,12 @@ section .parrafo-quienes-somos {
 @media (max-width: 426px) {
   .nav-bar ul {
     gap: .625rem;
-    font-size: .8125rem; }
+    font-size: 12px; }
   .pagina-principal {
     height: 25rem; }
+    .pagina-principal .nav-bar ul {
+      gap: .625rem;
+      font-size: 12px; }
     .pagina-principal .titulo-del-navegador {
       font-size: .9375rem;
       padding-top: .3125rem; }
