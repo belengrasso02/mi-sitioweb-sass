@@ -20,6 +20,19 @@ body {
   color: white;
   font-family: "Inria Serif", serif; }
 
+.recetas-grid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding-top: 2.5rem;
+  row-gap: 3.75rem;
+  justify-items: center;
+  align-items: center; }
+  .recetas-grid .receta-circulo-1, .recetas-grid .receta-circulo-2, .recetas-grid .receta-circulo-3, .recetas-grid .receta-circulo-4 {
+    width: 18.75rem; }
+
 .fondo-pagina-2 {
   background-image: url(../assets/img/fondo-harina.png);
   background-repeat: no-repeat; }
@@ -42,7 +55,7 @@ section .parrafo-quienes-somos {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(5, 12.5rem); }
-  .grid-quienes-somos .texto-1, .grid-quienes-somos .texto-2, .grid-quienes-somos .texto-3 {
+  .grid-quienes-somos .texto-1, .grid-quienes-somos .texto-2, .grid-quienes-somos .texto-3, .grid-quienes-somos .img-2 img .grid-quienes-somos .texto-2, .grid-quienes-somos .img-2 img .grid-quienes-somos .texto-3 {
     padding-right: 2.5rem;
     font-size: 1.875rem;
     align-self: flex-start;
@@ -62,9 +75,67 @@ section .parrafo-quienes-somos {
   .grid-quienes-somos .img-1 {
     grid-row: 2;
     grid-column: 7; }
+    .grid-quienes-somos .img-1:hover {
+      filter: drop-shadow(2px 2px 0.3125rem green);
+      transform: scale(1); }
+    .grid-quienes-somos .img-1 img {
+      transition: all 3000ms cubic-bezier(0, 86, 0.77, 0.59); }
   .grid-quienes-somos .img-2 {
     grid-column: 1;
     grid-row: 4/5; }
+    .grid-quienes-somos .img-2:hover {
+      filter: drop-shadow(2px 2px 5px beige); }
+    .grid-quienes-somos .img-2 img .fondo-pagina-2 {
+      background-image: url(../assets/img/fondo-harina.png);
+      background-repeat: no-repeat; }
+    .grid-quienes-somos .img-2 img section .hola {
+      font-style: italic;
+      font-size: 2.5rem;
+      text-align: center; }
+    .grid-quienes-somos .img-2 img section .parrafo-quienes-somos {
+      font-size: 1.375rem;
+      text-align: center;
+      padding-left: 3.75rem;
+      padding-right: 3.75rem;
+      margin: 3.75rem; }
+    .grid-quienes-somos .img-2 img .grid-quienes-somos {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: repeat(5, 12.5rem); }
+      .grid-quienes-somos .img-2 img .grid-quienes-somos .texto-1, .grid-quienes-somos .img-2 img .grid-quienes-somos .texto-2, .grid-quienes-somos .img-2 img .grid-quienes-somos .texto-3 {
+        padding-right: 2.5rem;
+        font-size: 1.875rem;
+        align-self: flex-start;
+        text-align: center; }
+      .grid-quienes-somos .img-2 img .grid-quienes-somos .texto-2 {
+        grid-column: 1/5;
+        grid-row: 3;
+        align-self: flex-end; }
+      .grid-quienes-somos .img-2 img .grid-quienes-somos .texto-3 {
+        align-self: center;
+        padding-right: 3.125rem;
+        grid-column: 7;
+        grid-row: 4;
+        justify-self: right; }
+      .grid-quienes-somos .img-2 img .grid-quienes-somos #recetas {
+        color: white; }
+      .grid-quienes-somos .img-2 img .grid-quienes-somos .img-1 {
+        grid-row: 2;
+        grid-column: 7; }
+        .grid-quienes-somos .img-2 img .grid-quienes-somos .img-1:hover {
+          filter: drop-shadow(2px 2px 0.3125rem green);
+          transform: scale(1); }
+        .grid-quienes-somos .img-2 img .grid-quienes-somos .img-1 img {
+          transition: all 3000ms cubic-bezier(0, 86, 0.77, 0.59); }
+      .grid-quienes-somos .img-2 img .grid-quienes-somos .img-2 {
+        grid-column: 1;
+        grid-row: 4/5; }
+        .grid-quienes-somos .img-2 img .grid-quienes-somos .img-2:hover {
+          filter: drop-shadow(2px 2px 5px beige); }
+        .grid-quienes-somos .img-2 img .grid-quienes-somos .img-2 img {
+          transition: all 3000ms cubic-bezier(0, 86, 0.77, 0.59); }
 
 .grid-recetas {
   display: grid;
@@ -72,7 +143,7 @@ section .parrafo-quienes-somos {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr); }
   .grid-recetas .receta-1 {
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(128, 128, 128, 0.24);
     border-radius: 10%;
     grid-column: 1/3;
     width: 90%;
@@ -84,7 +155,7 @@ section .parrafo-quienes-somos {
     .grid-recetas .receta-1 .img-pizza {
       margin: 1.25rem;
       grid-area: 1/1; }
-  .grid-recetas .bloque-negro-1, .grid-recetas .bloque-negro-2 {
+  .grid-recetas .bloque-negro-1 {
     border-radius: 15%;
     text-align: center;
     justify-content: center;
@@ -94,10 +165,10 @@ section .parrafo-quienes-somos {
     grid-area: 1/2;
     margin: 1.25rem;
     padding: 1.25rem; }
-    .grid-recetas .bloque-negro-1 h2, .grid-recetas .bloque-negro-2 h2 {
+    .grid-recetas .bloque-negro-1 h2 {
       padding-bottom: 3.125rem; }
   .grid-recetas .receta-2 {
-    background-color: #d5cd9d4a;
+    background-color: rgba(238, 130, 238, 0.233);
     border-radius: 10%;
     grid-area: 2/1;
     grid-row: 2/3;
@@ -122,7 +193,7 @@ section .parrafo-quienes-somos {
     .grid-recetas .bloque-blanco-1 h2, .grid-recetas .bloque-blanco-2 h2 {
       padding-bottom: 3.125rem; }
   .grid-recetas .receta-3 {
-    background-color: #d5cd9d4a;
+    background-color: rgba(238, 130, 238, 0.233);
     border-radius: 10%;
     grid-area: 2/2;
     grid-row: 2/3;
@@ -144,20 +215,30 @@ section .parrafo-quienes-somos {
     margin: auto;
     width: 90%;
     height: 34.375rem;
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(128, 128, 128, 0.24);
     border-radius: 10%;
     grid-column: 1/3; }
     .grid-recetas .receta-4 .img-churrasco {
-      margin-top: 1.25rem; }
-  .grid-recetas .bloque-negro-2 {
-    width: 31.25rem;
-    height: 31.25rem; }
-    .grid-recetas .bloque-negro-2 h2 {
-      padding-bottom: 3.125rem; }
+      margin-top: 1.25rem;
+      position: relative;
+      left: -5rem; }
+    .grid-recetas .receta-4 .bloque-negro-2 {
+      text-align: center;
+      justify-content: center;
+      align-content: center;
+      width: 31.25rem;
+      grid-row: 1/2;
+      grid-column: 2/3;
+      margin: 1.25rem;
+      padding: 1.25rem; }
+      .grid-recetas .receta-4 .bloque-negro-2 h2 {
+        padding-bottom: 20px;
+        align-self: center;
+        justify-self: center; }
 
 .parrafo-4 {
   text-align: center;
-  font-size: 1.875rem;
+  font-size: 2.5rem;
   padding: 1.875rem; }
 
 .contacto-div {
@@ -242,11 +323,13 @@ section .parrafo-quienes-somos {
     gap: 1.875rem;
     gap: 1.875rem;
     padding-right: .625rem; }
-    .pagina-principal .nav-bar ul li a {
+    .pagina-principal .nav-bar ul li:hover {
+      transform: scale(1.3); }
+    .pagina-principal .nav-bar ul a {
       color: white;
       font-family: "Inria Serif", serif;
       text-decoration: none; }
-      .pagina-principal .nav-bar ul li a:hover {
+      .pagina-principal .nav-bar ul a:hover {
         color: black; }
   .pagina-principal .titulo-grande {
     font-family: "Great Vibes", cursive;
@@ -305,11 +388,13 @@ section .parrafo-quienes-somos {
   justify-items: end;
   gap: 1.875rem;
   padding-right: .625rem; }
-  .nav-bar ul li a {
+  .nav-bar ul li:hover {
+    transform: scale(1.3); }
+  .nav-bar ul a {
     color: white;
     font-family: "Inria Serif", serif;
     text-decoration: none; }
-    .nav-bar ul li a:hover {
+    .nav-bar ul a:hover {
       color: black; }
 
 .pagina-principal-3 {
@@ -360,7 +445,7 @@ section .parrafo-quienes-somos {
     font-size: 1.5625rem; }
   .parrafo-quienes-somos {
     font-size: 1.875rem; }
-  .grid-quienes-somos .texto-1, .grid-quienes-somos .texto-2, .grid-quienes-somos .texto-3 {
+  .grid-quienes-somos .texto-1, .grid-quienes-somos .texto-2, .grid-quienes-somos .texto-3, .grid-quienes-somos .img-2 img .grid-quienes-somos .texto-2, .grid-quienes-somos .img-2 img .grid-quienes-somos .texto-3 {
     grid-row: 2;
     grid-column: 1/2;
     padding: 2.5rem; }
@@ -373,13 +458,13 @@ section .parrafo-quienes-somos {
     grid-column: 5/8; }
   .pagina-principal-3 .titulo-pag-recetas {
     padding-top: 6.25rem; }
-  .pagina-principal-3 .bloque-negro-1, .pagina-principal-3 .grid-recetas .bloque-negro-2, .grid-recetas .pagina-principal-3 .bloque-negro-2 {
+  .pagina-principal-3 .grid-recetas .bloque-negro-1 {
     align-self: center; } }
 
 @media (max-width: 1024px) {
   .titulos-de-los-circulos {
     font-size: 1.25rem; }
-  .grid-quienes-somos .texto-1, .grid-quienes-somos .texto-2, .grid-quienes-somos .texto-3 {
+  .grid-quienes-somos .texto-1, .grid-quienes-somos .texto-2, .grid-quienes-somos .texto-3, .grid-quienes-somos .img-2 img .grid-quienes-somos .texto-2, .grid-quienes-somos .img-2 img .grid-quienes-somos .texto-3 {
     font-size: 1.875rem;
     grid-row: 2/3;
     grid-column: 1/2;
@@ -400,9 +485,9 @@ section .parrafo-quienes-somos {
       width: 100%; }
       .grid-recetas .receta-1 .img-pizza img {
         width: 28.125rem; }
-    .grid-recetas .receta-1 .bloque-negro-1, .grid-recetas .receta-1 .bloque-negro-2 {
+    .grid-recetas .receta-1 .bloque-negro-1 {
       width: 18.75rem; }
-      .grid-recetas .receta-1 .bloque-negro-1 h2, .grid-recetas .receta-1 .bloque-negro-2 h2 {
+      .grid-recetas .receta-1 .bloque-negro-1 h2 {
         font-size: 1.25rem; }
   .grid-recetas .receta-2 {
     width: 85%; }
@@ -434,12 +519,14 @@ section .parrafo-quienes-somos {
       top: .625rem; }
       .grid-recetas .receta-4 .img-churrasco img {
         width: 31.25rem; }
-    .grid-recetas .receta-4 .bloque-negro-2 h2 {
-      font-size: 1.25rem;
-      padding: 1.875rem;
-      padding-bottom: 3.75rem; }
-    .grid-recetas .receta-4 .bloque-negro-2 p {
-      padding: 2.5rem; } }
+    .grid-recetas .receta-4 .bloque-negro-2 {
+      width: 25rem; }
+      .grid-recetas .receta-4 .bloque-negro-2 h2 {
+        font-size: 1.25rem;
+        padding: 1.875rem;
+        padding-bottom: 3.75rem; }
+      .grid-recetas .receta-4 .bloque-negro-2 p {
+        padding: 2.5rem; } }
 
 @media (max-width: 768px) {
   .pagina-principal .titulo-del-navegador {
@@ -470,7 +557,7 @@ section .parrafo-quienes-somos {
   .grid-quienes-somos {
     grid-template-columns: repeat(3, 15.625rem);
     grid-template-rows: repeat(5, 12.5rem); }
-    .grid-quienes-somos .grid-quienes-somos .texto-1, .grid-quienes-somos .grid-quienes-somos .texto-2, .grid-quienes-somos .grid-quienes-somos .texto-3 {
+    .grid-quienes-somos .grid-quienes-somos .texto-1, .grid-quienes-somos .grid-quienes-somos .texto-2, .grid-quienes-somos .grid-quienes-somos .texto-3, .grid-quienes-somos .img-2 img .grid-quienes-somos .texto-2, .grid-quienes-somos .img-2 img .grid-quienes-somos .texto-3 {
       grid-column: 2/3;
       grid-row: 3/4;
       font-size: 1.25rem;
@@ -482,11 +569,17 @@ section .parrafo-quienes-somos {
       font-size: 1.5625rem;
       grid-area: 5/3; }
     .grid-quienes-somos .img-1 {
-      grid-area: 1/2;
+      width: 25rem;
+      grid-row: 1/2;
+      grid-column: 2/4;
       position: relative;
-      right: .3125rem; }
+      right: -7.1875rem; }
+      .grid-quienes-somos .img-1:hover {
+        filter: none;
+        transform: none; }
       .grid-quienes-somos .img-1 img {
-        width: 25rem; }
+        width: 25rem;
+        transition: none; }
     .grid-quienes-somos .img-2 {
       width: 9.375rem;
       grid-area: 4/1; }
@@ -496,9 +589,9 @@ section .parrafo-quienes-somos {
     left: 3.125rem; }
     .grid-recetas .receta-1 .img-pizza img {
       width: 25rem; }
-  .grid-recetas .receta-1 .bloque-negro-1, .grid-recetas .receta-1 .bloque-negro-2 {
+  .grid-recetas .receta-1 .bloque-negro-1 {
     padding: 2.5rem; }
-    .grid-recetas .receta-1 .bloque-negro-1 p, .grid-recetas .receta-1 .bloque-negro-2 p {
+    .grid-recetas .receta-1 .bloque-negro-1 p {
       font-size: .8125rem; }
   .grid-recetas .receta-2 {
     width: 90%; }
@@ -512,36 +605,42 @@ section .parrafo-quienes-somos {
     width: 90%;
     height: 44.5rem; }
     .grid-recetas .receta-3 .img-fideos {
-      width: 100%;
+      width: 85%;
       position: relative;
       left: 1.6875rem; }
       .grid-recetas .receta-3 .img-fideos img {
         width: 18.75rem; }
   .grid-recetas .receta-4 {
-    height: 28.625rem; }
+    height: 28.625rem;
+    width: 90%;
+    grid-column: 1/3; }
     .grid-recetas .receta-4 .img-churrasco {
       width: 100%;
       position: relative;
-      left: 9.375rem; }
+      left: 2.5rem;
+      grid-column: 1/2; }
       .grid-recetas .receta-4 .img-churrasco img {
         width: 25rem; }
     .grid-recetas .receta-4 .bloque-negro-2 {
-      padding: 5rem; }
+      margin: 0;
+      grid-column: 2/3;
+      grid-row: 1/2;
+      width: 20rem; }
       .grid-recetas .receta-4 .bloque-negro-2 h2 {
-        font-size: 1.0625rem;
-        padding: 3.125rem; }
+        padding: .75rem; }
       .grid-recetas .receta-4 .bloque-negro-2 p {
-        font-size: .9375rem; } }
+        font-size: .9375rem;
+        padding: 0; } }
 
 @media (max-width: 426px) {
+  .nav-bar ul {
+    gap: .625rem;
+    font-size: .8125rem; }
   .pagina-principal {
     height: 25rem; }
     .pagina-principal .titulo-del-navegador {
       font-size: .9375rem;
       padding-top: .3125rem; }
-    .pagina-principal .nav-bar ul {
-      gap: .625rem;
-      font-size: .75rem; }
     .pagina-principal .titulo-grande {
       font-size: 4.375rem;
       margin: auto;
@@ -552,23 +651,28 @@ section .parrafo-quienes-somos {
     grid-template-columns: repeat 3, 14.0625rem;
     grid-template-rows: repeat 3, 18.75rem; }
     .recetas-grid .receta-circulo-1 {
-      grid-area: 1/1; }
+      grid-area: 1/1;
+      width: 11.875rem; }
     .recetas-grid .receta-circulo-2 {
-      grid-area: 1/2; }
+      grid-area: 1/2;
+      width: 11.875rem; }
     .recetas-grid .receta-circulo-3 {
-      grid-area: 2/1; }
+      grid-area: 2/1;
+      width: 11.875rem; }
     .recetas-grid .receta-circulo-4 {
-      grid-area: 2/2; }
+      grid-area: 2/2;
+      width: 11.875rem; }
     .recetas-grid .receta-circulo-5 {
-      grid-area: 3/1; }
+      grid-area: 3/1;
+      width: 11.875rem; }
     .recetas-grid .receta-circulo-6 {
-      grid-area: 3/2; }
-    .recetas-grid img {
-      width: 12.5rem;
-      padding-right: .625rem; }
+      grid-area: 3/2;
+      width: 11.875rem; }
     .recetas-grid .titulos-de-los-circulos {
       font-size: .8125rem;
       padding: 1.25rem; }
+    .recetas-grid img {
+      width: 11.875rem; }
   .fondo-pagina-2 {
     width: 100%;
     background-size: cover;
@@ -588,7 +692,7 @@ section .parrafo-quienes-somos {
       font-size: .9375rem;
       margin: auto;
       padding: .9375rem; }
-    .fondo-pagina-2 .grid-quienes-somos .texto-1, .fondo-pagina-2 .grid-quienes-somos .texto-2, .fondo-pagina-2 .grid-quienes-somos .texto-3 {
+    .fondo-pagina-2 .grid-quienes-somos .texto-1, .fondo-pagina-2 .grid-quienes-somos .texto-2, .fondo-pagina-2 .grid-quienes-somos .texto-3, .fondo-pagina-2 .grid-quienes-somos .img-2 img .grid-quienes-somos .texto-2, .fondo-pagina-2 .grid-quienes-somos .img-2 img .grid-quienes-somos .texto-3 {
       align-self: center;
       font-size: 1.25rem;
       grid-column: 1;
@@ -637,14 +741,14 @@ section .parrafo-quienes-somos {
         .pagina-principal-3 .grid-recetas .receta-1 .img-pizza img {
           width: 20rem;
           height: 17.375rem; }
-      .pagina-principal-3 .grid-recetas .receta-1 .bloque-negro-1, .pagina-principal-3 .grid-recetas .receta-1 .bloque-negro-2 {
+      .pagina-principal-3 .grid-recetas .receta-1 .bloque-negro-1 {
         grid-row: 1/2;
         grid-column: 1;
         height: 12.5rem;
         width: 90%; }
-        .pagina-principal-3 .grid-recetas .receta-1 .bloque-negro-1 h2, .pagina-principal-3 .grid-recetas .receta-1 .bloque-negro-2 h2 {
+        .pagina-principal-3 .grid-recetas .receta-1 .bloque-negro-1 h2 {
           padding-top: 6.25rem; }
-        .pagina-principal-3 .grid-recetas .receta-1 .bloque-negro-1 p, .pagina-principal-3 .grid-recetas .receta-1 .bloque-negro-2 p {
+        .pagina-principal-3 .grid-recetas .receta-1 .bloque-negro-1 p {
           font-size: .625rem; }
     .pagina-principal-3 .grid-recetas .receta-2 {
       width: 23.125rem;
@@ -678,31 +782,37 @@ section .parrafo-quienes-somos {
           font-size: .75rem; }
     .pagina-principal-3 .grid-recetas .receta-4 {
       width: 21.875rem;
-      height: 37.5rem;
+      height: 650px;
       grid-row: 4/5;
       grid-column: 1; }
       .pagina-principal-3 .grid-recetas .receta-4 .img-churrasco {
-        width: 100%;
+        grid-row: 2/3;
+        width: 90%;
         position: relative;
-        left: 12.5rem; }
+        left: 1.5625rem;
+        margin: 0; }
         .pagina-principal-3 .grid-recetas .receta-4 .img-churrasco img {
-          width: 16.875rem; }
+          width: 18.75rem; }
       .pagina-principal-3 .grid-recetas .receta-4 .bloque-negro-2 {
-        grid-row: 4/5;
-        height: 6.25rem;
-        width: 90%; }
+        grid-row: 3/5;
+        grid-column: 1/3;
+        width: 90%;
+        padding: .625rem;
+        padding-left: 2.5rem; }
         .pagina-principal-3 .grid-recetas .receta-4 .bloque-negro-2 h2 {
-          font-size: 1.0625rem; }
+          font-size: 1.0625rem;
+          padding: 0; }
         .pagina-principal-3 .grid-recetas .receta-4 .bloque-negro-2 p {
           font-size: .75rem; } }
 
 @media (max-width: 376px) {
-  .pagina-principal .nav-bar ul {
+  .nav-bar ul {
     gap: .625rem;
-    font-size: .625rem; }
+    font-size: .75rem; }
   .recetas-grid img {
-    padding-right: 1.25rem;
-    width: 11.875rem; }
+    position: relative;
+    left: .3125rem;
+    width: 10.625rem; }
   .recetas-grid .titulos-de-los-circulos {
     font-size: .9375rem; }
   .fondo-pagina-2 {
@@ -722,7 +832,7 @@ section .parrafo-quienes-somos {
       .fondo-pagina-2 .main-q .grid-quienes-somos {
         grid-template-columns: repeat 2, 6.25rem;
         grid-template-rows: repeat 2, 1fr; }
-        .fondo-pagina-2 .main-q .grid-quienes-somos .texto-1, .fondo-pagina-2 .main-q .grid-quienes-somos .texto-2, .fondo-pagina-2 .main-q .grid-quienes-somos .texto-3 {
+        .fondo-pagina-2 .main-q .grid-quienes-somos .texto-1, .fondo-pagina-2 .main-q .grid-quienes-somos .texto-2, .fondo-pagina-2 .main-q .grid-quienes-somos .texto-3, .fondo-pagina-2 .main-q .grid-quienes-somos .img-2 img .grid-quienes-somos .texto-2, .fondo-pagina-2 .main-q .grid-quienes-somos .img-2 img .grid-quienes-somos .texto-3 {
           width: 60%;
           align-self: center;
           grid-row: 2/3;
@@ -738,29 +848,51 @@ section .parrafo-quienes-somos {
           padding: 1.875rem;
           width: 18.75rem; }
         .fondo-pagina-2 .main-q .grid-quienes-somos .texto-3 {
-          width: 18.75rem;
-          grid-row: 4/5;
+          width: 15.625rem;
+          grid-row: 3/4;
           grid-column: 1/3;
           font-size: 1.25rem;
-          align-self: flex-start;
-          justify-self: center;
-          padding-left: 1.25rem;
-          padding-bottom: 3.125rem; }
+          align-self: flex-end;
+          justify-self: center; }
         .fondo-pagina-2 .main-q .grid-quienes-somos .img-1 {
-          width: 100%;
+          width: 12.5rem;
           grid-column: 2/3;
           grid-row: 1/2;
           position: relative;
-          right: 7.8125rem;
+          right: 5rem;
           top: 2.5rem; }
           .fondo-pagina-2 .main-q .grid-quienes-somos .img-1 img {
-            width: 15.625rem; }
+            width: 12.5rem; }
         .fondo-pagina-2 .main-q .grid-quienes-somos .img-2 {
           width: 23.125rem; }
           .fondo-pagina-2 .main-q .grid-quienes-somos .img-2 img {
             width: 21.875rem;
             grid-area: 5/1;
-            padding-top: 1.25rem; } }
+            padding-top: 1.25rem; }
+  .pagina-principal-3 .grid-recetas .receta-1, .pagina-principal-3 .grid-recetas .receta-2, .pagina-principal-3 .grid-recetas .receta-3, .pagina-principal-3 .grid-recetas .receta-4 {
+    width: 20.625rem; }
+    .pagina-principal-3 .grid-recetas .receta-1 .img-pizza, .pagina-principal-3 .grid-recetas .receta-2 .img-pizza, .pagina-principal-3 .grid-recetas .receta-3 .img-pizza, .pagina-principal-3 .grid-recetas .receta-4 .img-pizza {
+      position: relative;
+      left: .625rem;
+      width: 20.625rem; }
+      .pagina-principal-3 .grid-recetas .receta-1 .img-pizza img, .pagina-principal-3 .grid-recetas .receta-2 .img-pizza img, .pagina-principal-3 .grid-recetas .receta-3 .img-pizza img, .pagina-principal-3 .grid-recetas .receta-4 .img-pizza img {
+        width: 18.75rem; }
+  .pagina-principal-3 .grid-recetas .receta-2 .img-tostadas {
+    position: relative;
+    left: -1.5625rem; }
+  .pagina-principal-3 .grid-recetas .receta-3 .img-fideos {
+    width: 20rem;
+    position: relative;
+    left: -0.5rem; }
+    .pagina-principal-3 .grid-recetas .receta-3 .img-fideos img {
+      width: 310px; }
+  .pagina-principal-3 .grid-recetas .receta-3 .bloque-blanco-2 {
+    padding: 0; }
+  .pagina-principal-3 .grid-recetas .receta-4 .img-churrasco {
+    position: relative;
+    left: .9375rem; }
+  .pagina-principal-3 .grid-recetas .receta-4 .bloque-negro-2 h2 {
+    padding-bottom: 1.25rem; } }
 
 @media (max-width: 321px) {
   .pagina-principal .nav-bar ul,
@@ -768,15 +900,16 @@ section .parrafo-quienes-somos {
     gap: .3125rem; }
     .pagina-principal .nav-bar ul a,
     .pagina-principal-2 .nav-bar ul a {
-      font-size: .5rem; }
+      font-size: .625rem; }
   .parrafo-del-body, .parrafo-del-body-2 {
     font-size: .9375rem; }
   .recetas-grid {
     grid-template-columns: 1, 25rem;
     grid-template-rows: repeat 6, 18.75rem; }
     .recetas-grid article img {
-      width: 20rem;
-      padding-right: 2.5rem; }
+      width: 19.375rem;
+      position: relative;
+      left: .625rem; }
     .recetas-grid .receta-circulo-1 {
       grid-area: 1/1; }
     .recetas-grid .receta-circulo-2 {
@@ -789,6 +922,10 @@ section .parrafo-quienes-somos {
       grid-area: 5/1; }
     .recetas-grid .receta-circulo-6 {
       grid-area: 6/1; }
+    .recetas-grid .titulos-de-los-circulos {
+      padding-left: 3.75rem;
+      width: 18.75rem;
+      font-size: 1.25rem; }
   .grid-recetas {
     grid-template-columns: 1,18.75rem;
     grid-template-rows: repeat(4, 12.5rem); }
@@ -799,7 +936,7 @@ section .parrafo-quienes-somos {
     .fondo-pagina-2 .main-q .grid-quienes-somos {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(3, 1fr); }
-      .fondo-pagina-2 .main-q .grid-quienes-somos .texto-1, .fondo-pagina-2 .main-q .grid-quienes-somos .texto-2, .fondo-pagina-2 .main-q .grid-quienes-somos .texto-3 {
+      .fondo-pagina-2 .main-q .grid-quienes-somos .texto-1, .fondo-pagina-2 .main-q .grid-quienes-somos .texto-2, .fondo-pagina-2 .main-q .grid-quienes-somos .texto-3, .fondo-pagina-2 .main-q .grid-quienes-somos .img-2 img .grid-quienes-somos .texto-2, .fondo-pagina-2 .main-q .grid-quienes-somos .img-2 img .grid-quienes-somos .texto-3 {
         font-size: 1.25rem;
         grid-row: 2/3;
         align-self: center; }
@@ -824,4 +961,31 @@ section .parrafo-quienes-somos {
       .fondo-pagina-2 .main-q .grid-quienes-somos .img-2 {
         width: 18.75rem; }
         .fondo-pagina-2 .main-q .grid-quienes-somos .img-2 img {
+          width: 16.875rem; }
+  .pagina-principal-3 .grid-recetas {
+    grid-template-rows: repeat(4, 1fr); }
+    .pagina-principal-3 .grid-recetas .receta-1, .pagina-principal-3 .grid-recetas .receta-4 {
+      width: 18.75rem; }
+      .pagina-principal-3 .grid-recetas .receta-1 .img-pizza, .pagina-principal-3 .grid-recetas .receta-1 .img-churrasco, .pagina-principal-3 .grid-recetas .receta-4 .img-pizza, .pagina-principal-3 .grid-recetas .receta-4 .img-churrasco {
+        width: 18.75rem; }
+        .pagina-principal-3 .grid-recetas .receta-1 .img-pizza img, .pagina-principal-3 .grid-recetas .receta-1 .img-churrasco img, .pagina-principal-3 .grid-recetas .receta-4 .img-pizza img, .pagina-principal-3 .grid-recetas .receta-4 .img-churrasco img {
+          width: 16.875rem;
+          height: 16.875rem; }
+      .pagina-principal-3 .grid-recetas .receta-1 .bloque-negro-1, .pagina-principal-3 .grid-recetas .receta-4 .bloque-negro-1 {
+        padding: .3125rem; }
+    .pagina-principal-3 .grid-recetas .receta-2 {
+      width: 20rem; }
+      .pagina-principal-3 .grid-recetas .receta-2 .img-tostadas {
+        width: 18.75rem;
+        position: relative;
+        left: -0.625rem; }
+        .pagina-principal-3 .grid-recetas .receta-2 .img-tostadas img {
+          width: 16.875rem; }
+    .pagina-principal-3 .grid-recetas .receta-3 {
+      width: 20rem; }
+      .pagina-principal-3 .grid-recetas .receta-3 .img-fideos {
+        width: 16.875rem;
+        position: relative;
+        left: .625rem; }
+        .pagina-principal-3 .grid-recetas .receta-3 .img-fideos img {
           width: 16.875rem; } }

@@ -52,9 +52,95 @@ section{
     .img-1{
         grid-row: 2;
         grid-column: 7;
+        &:hover{
+            filter: drop-shadow(2px 2px .3125rem green);
+            transform: scale(1.0);
+        }
+        img{
+            transition: all 3000ms cubic-bezier(0,86, .77, .59);
+        }
     }
     .img-2{
         grid-column: 1;
         grid-row: 4/5;
+        &:hover{
+            filter: drop-shadow(2px 2px 5px beige);
+        }
+        img{
+            .fondo-pagina-2{
+                background-image: url(../assets/img/fondo-harina.png);
+                background-repeat: no-repeat;
+            }
+            section{
+                .hola{
+                    font-style: italic;
+                    font-size: map-get($tamanio-fuente, l);
+                    text-align: center;
+                }
+            
+                .parrafo-quienes-somos{
+                    font-size: map-get($tamanio-fuente , s );
+                    text-align: center;
+                    padding-left: 3.75rem;
+                    padding-right: 3.75rem;
+                    margin: 3.75rem;
+                }
+            }
+            .grid-quienes-somos{
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-columns: repeat(7,1fr);
+                grid-template-rows: repeat(5,12.5rem);
+                
+                .texto-1{
+                    padding-right: 2.5rem;
+                    font-size: map-get($tamanio-fuente, m );
+                    align-self: flex-start;
+                    text-align: center;
+                    // grid-column: 3/7;
+                    // grid-row: 2;
+                }
+                .texto-2{
+                    @extend .texto-1;
+                    grid-column: 1/5;
+                    grid-row: 3;
+                    align-self: flex-end;
+                }
+                .texto-3{
+                    @extend .texto-1;
+                    align-self: center;
+                    padding-right: 3.125rem;
+                    grid-column: 7;
+                    grid-row: 4;
+                    justify-self: right;
+                }
+                #recetas{
+                    color:white;
+                }
+                .img-1{
+                    grid-row: 2;
+                    grid-column: 7;
+                    &:hover{
+                        filter: drop-shadow(2px 2px .3125rem green);
+                        transform: scale(1.0);
+                    }
+                    img{
+                        transition: all 3000ms cubic-bezier(0,86, .77, .59);
+                    }
+                }
+                .img-2{
+                    grid-column: 1;
+                    grid-row: 4/5;
+                    &:hover{
+                        filter: drop-shadow(2px 2px 5px beige);
+                    }
+                    img{
+                        transition: all 3000ms cubic-bezier(0,86, .77, .59);
+                    }
+                }
+            }
+            
+        }
     }
 }

@@ -3,3 +3,17 @@ body {
     color: white;
     font-family: "Inria Serif", serif;
 }
+.recetas-grid{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding-top: 2.5rem;
+    row-gap: 3.75rem;
+    justify-items: center;
+    align-items: center;
+    .receta-circulo-1, .receta-circulo-2, .receta-circulo-3, .receta-circulo-4 {
+        width: 18.75rem;
+    }
+}
