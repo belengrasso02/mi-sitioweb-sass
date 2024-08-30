@@ -1,4 +1,4 @@
-@media (max-width:376px){
+@media (max-width:376px){ 
     .nav-bar ul {
         gap: .625rem;
         font-size: .75rem;
@@ -83,7 +83,7 @@
         }
     }
 
-    .pagina-principal-3{
+    .pagina-principal-3{ 
         .grid-recetas{
             .receta-1, .receta-2, .receta-3, .receta-4{
                 width: 20.625rem;
@@ -127,5 +127,23 @@
                     }
                 }
         } 
-    }
+        .contacto-div{
+            font-size: .625rem;
+            .contacto-mail, .contacto-wsp{
+                img{  
+                    width: 20px; 
+                } 
+            } 
+            .ubicacion{
+                    p{
+                        text-align: center;
+                        width: 9.375rem; 
+                    }
+            iframe{
+                width: 9.375rem;
+                height: 9.375rem;
+        } 
+    } 
+}
+}
 }

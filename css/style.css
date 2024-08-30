@@ -300,7 +300,8 @@ section .parrafo-quienes-somos {
 #boton-enviar {
   font-family: "Inria Serif", serif;
   color: white;
-  display: block; }
+  display: block;
+  padding: 1.25rem; }
 
 .pagina-principal {
   background-image: url(../assets/img/torta3.png);
@@ -459,7 +460,11 @@ section .parrafo-quienes-somos {
   .pagina-principal-3 .titulo-pag-recetas {
     padding-top: 6.25rem; }
   .pagina-principal-3 .grid-recetas .bloque-negro-1 {
-    align-self: center; } }
+    align-self: center; }
+  label {
+    padding-left: 1.25rem; }
+  #text {
+    width: 33.75rem; } }
 
 @media (max-width: 1024px) {
   .titulos-de-los-circulos {
@@ -630,7 +635,18 @@ section .parrafo-quienes-somos {
         padding: .75rem; }
       .grid-recetas .receta-4 .bloque-negro-2 p {
         font-size: .9375rem;
-        padding: 0; } }
+        padding: 0; }
+  .parrafo-4 {
+    font-size: 1.25rem; }
+  #number, #nombre, #email {
+    width: 18.75rem; }
+  #text, #number, #email, #nombre {
+    width: 21.875rem; }
+  .pagina-principal-3 .contacto-div {
+    gap: 0; }
+    .pagina-principal-3 .contacto-div .ubicacion iframe {
+      width: 25rem;
+      height: 18.75rem; } }
 
 @media (max-width: 426px) {
   .nav-bar ul {
@@ -639,7 +655,7 @@ section .parrafo-quienes-somos {
   .pagina-principal {
     height: 25rem; }
     .pagina-principal .nav-bar ul {
-      gap: .625rem;
+      gap: .3125rem;
       font-size: 12px; }
     .pagina-principal .titulo-del-navegador {
       font-size: .9375rem;
@@ -806,7 +822,18 @@ section .parrafo-quienes-somos {
           font-size: 1.0625rem;
           padding: 0; }
         .pagina-principal-3 .grid-recetas .receta-4 .bloque-negro-2 p {
-          font-size: .75rem; } }
+          font-size: .75rem; }
+  .pagina-principal-3 .parrafo-4 {
+    font-size: .9375rem; }
+  .pagina-principal-3 .contacto-div {
+    font-size: .625rem;
+    padding-left: 1.25rem; }
+    .pagina-principal-3 .contacto-div .contacto-mail, .pagina-principal-3 .contacto-div .contacto-wsp {
+      padding: .625rem;
+      gap: .625rem; }
+    .pagina-principal-3 .contacto-div .ubicacion iframe {
+      width: 12.5rem;
+      height: 12.5rem; } }
 
 @media (max-width: 376px) {
   .nav-bar ul {
@@ -895,7 +922,17 @@ section .parrafo-quienes-somos {
     position: relative;
     left: .9375rem; }
   .pagina-principal-3 .grid-recetas .receta-4 .bloque-negro-2 h2 {
-    padding-bottom: 1.25rem; } }
+    padding-bottom: 1.25rem; }
+  .pagina-principal-3 .contacto-div {
+    font-size: .625rem; }
+    .pagina-principal-3 .contacto-div .contacto-mail img, .pagina-principal-3 .contacto-div .contacto-wsp img {
+      width: 20px; }
+    .pagina-principal-3 .contacto-div .ubicacion p {
+      text-align: center;
+      width: 9.375rem; }
+    .pagina-principal-3 .contacto-div .ubicacion iframe {
+      width: 9.375rem;
+      height: 9.375rem; } }
 
 @media (max-width: 321px) {
   .pagina-principal .nav-bar ul,
@@ -991,4 +1028,20 @@ section .parrafo-quienes-somos {
         position: relative;
         left: .625rem; }
         .pagina-principal-3 .grid-recetas .receta-3 .img-fideos img {
-          width: 16.875rem; } }
+          width: 16.875rem; }
+  .pagina-principal-3 .parrafo-4 {
+    font-size: 0.75rem; }
+  .pagina-principal-3 .contacto-div {
+    display: block;
+    padding-left: 4.375rem; }
+    .pagina-principal-3 .contacto-div .ubicacion p {
+      width: 12.5rem; }
+    .pagina-principal-3 .contacto-div .ubicacion iframe {
+      width: 12.5rem;
+      height: 12.5rem; }
+  .pagina-principal-3 label {
+    font-size: 13px;
+    padding-left: .625rem; }
+  .pagina-principal-3 #number, .pagina-principal-3 #email, .pagina-principal-3 #nombre, .pagina-principal-3 #text {
+    width: 12.5rem;
+    margin: .625rem; } }

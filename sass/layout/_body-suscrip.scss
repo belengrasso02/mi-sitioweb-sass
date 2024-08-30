@@ -10,8 +10,10 @@
 #text{
     @include botones;
 }
+
 #boton-enviar{
     font-family: "Inria Serif", serif;
     color: white;
     display:block;
+    padding: 1.25rem;
 }

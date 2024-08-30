@@ -141,4 +141,22 @@
             }
         }
     }
-}
+    .parrafo-4{
+        font-size: map-get($tamanio-fuente, xs );
+    }
+    #number, #nombre, #email{
+        width: 18.75rem;
+    }
+    #text, #number, #email, #nombre {
+        width: 21.875rem;
+    }
+    .pagina-principal-3{
+        .contacto-div{
+            gap: 0;
+            .ubicacion iframe{
+                width: 25rem;
+                height: 18.75rem;
+            }
+        }
+    }
+        }

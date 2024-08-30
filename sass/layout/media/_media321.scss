@@ -131,5 +131,29 @@
                 }
             }
             }
+            .parrafo-4{
+                font-size: map-get($tamanio-fuente,xxxs );
             }
+            .contacto-div{
+                display: block;
+                padding-left: 4.375rem;
+                .ubicacion{
+                    p{
+                        width: 12.5rem; 
+                    }
+                iframe{
+                    width: 12.5rem;
+                    height: 12.5rem;
+                }
+            }
+            }
+    label{
+        font-size: 13px;
+        padding-left: .625rem;
+    }
+    #number, #email, #nombre, #text{
+        width: 12.5rem;
+        margin: .625rem;
         }
+    }
+    }

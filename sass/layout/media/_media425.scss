@@ -5,7 +5,7 @@
     }
     .pagina-principal{
         .nav-bar ul{
-            gap: .625rem;
+            gap: .3125rem;
             font-size: 12px;
         }
         height: 25rem;
@@ -229,6 +229,21 @@
                     font-size: .75rem;
                 }
             }
+        }
+    }
+    .parrafo-4{
+        font-size: .9375rem;
+    }
+    .contacto-div{
+        font-size: .625rem;
+        padding-left: 1.25rem;
+        .contacto-mail, .contacto-wsp{
+            padding: .625rem; 
+            gap: .625rem; 
+         }
+        .ubicacion iframe{ 
+            width: 12.5rem;
+            height: 12.5rem;
         }
     }
 }
